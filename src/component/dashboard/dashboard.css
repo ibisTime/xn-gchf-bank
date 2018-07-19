@@ -1,0 +1,171 @@
+.dashboard-layout {
+  min-height: 100vh;
+}
+.dashboard-layout .trigger {
+  position: absolute;
+  top: 20px;
+  left: 24px;
+  cursor: pointer;
+  transition: color .3s;
+}
+.dashboard-layout .trigger:hover {
+  color: #1890ff;
+}
+
+.dashboard-layout .header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  left: 0;
+  z-index: 1;
+}
+.ant-layout-header {
+    background: #202b47;
+}
+.dashboard-layout .ant-menu-dark.ant-menu-horizontal {
+  border-bottom: none;
+}
+
+.dashboard-layout .dropdown {
+	display: inline-block;
+	float: right;
+}
+
+.dashboard-layout .left-slider {
+  position: fixed;
+  left: 0;
+  top: 64px;
+  bottom: 0;
+  background: #202b47;
+  overflow: auto;
+  border: 1px solid #5471d9;
+  box-shadow: 0px 0px 30px rgba(84,113,277,0.5) inset;
+  border-radius: 5px;
+}
+
+.dashboard-layout .right-layout {
+  padding: 0px 24px 24px;
+  position: relative;
+  margin-left: 200px;
+  margin-top: 64px;
+}
+
+.dashboard-layout .right-layout.collapsed {
+  margin-left: 80px;
+}
+
+.dashboard-layout .full-right-content {
+  margin-left: 0 !important;
+  padding-top: 24px;
+}
+
+.dashboard-layout .right-content {
+  background: #202b47;
+  padding: 24px;
+  margin: 0px;
+  min-height: 280px;
+}
+.home-header.ant-layout-header {
+  background: rgb(38, 86, 130);
+}
+.home-header .ant-menu-dark.ant-menu-horizontal > .ant-menu-item .ant-dropdown-trigger {
+  color: #202b47;
+}
+.home-header .ant-menu-dark.ant-menu-horizontal > .ant-menu-item {
+  color: #202b47;
+}
+.dashboard-layout .home-header .ant-menu-dark.ant-menu-horizontal {
+  background: none;
+}
+.con-help-icon {
+  display: inline-block;
+  float: right;
+}
+.con-help-icon img:hover {
+  cursor: pointer;
+}
+.contract {
+  margin-right: 22px;
+  z-index: 33;
+}
+.help {
+  margin-right: 30px;
+  z-index: 33;
+}
+.ant-breadcrumb {
+    background: #202b47;
+    box-sizing: border-box;
+    color: white;
+}
+.ant-breadcrumb-separator {
+    color: white;
+}
+.ant-breadcrumb a {
+    color: white;
+}
+.ant-menu:after {
+    background: #6487d6;
+}
+.ant-menu-item {
+    background: transparent;
+    color: #6487d6;
+}
+.ant-menu:not(.ant-menu-horizontal) .ant-menu-item-selected {
+    background: #1890ff;
+    color: white;
+}
+.ant-table-thead > tr:first-child > th {
+    background: #43619f;
+}
+.ant-table-bordered .ant-table-thead > tr > th, .ant-table-bordered .ant-table-tbody > tr > td {
+    color: white;
+}
+.dashboard-layout .right-content {
+    border: 1px solid #5471d9;
+    box-shadow: 0px 0px 30px rgba(84,113,277,0.5) inset;
+    border-radius: 5px;
+}
+.ant-table-row .ant-table-row-level-0 .ant-table-row-selected {
+    background: #202b47;
+}
+.ant-table-row .ant-table-row-level-0:hover {
+    background: #202b47;
+    color: black;
+}
+.dashboard-layout .right-layout {
+    background: #202b47;
+}
+.ant-menu {
+    background:  transparent;
+    border: none;
+}
+.ant-table-tbody > tr:hover > td {
+    color: black;
+}
+.ant-table-row-selected > td{
+    color: black !important;
+}
+.ant-btn {
+    background: transparent;
+    color: white;
+}
+.ant-btn-primary {
+    background: #1890ff;
+}
+.ant-form-item-label label{
+    color: white;
+}
+/*详情页*/
+
+.ant-row ant-form-item {
+    color: white;
+}
+.ant-form-item-label span {
+    color: white;
+}
+.ant-form-item-label:after {
+    color: white;
+}
+.readonly-text {
+    color: white;
+}
