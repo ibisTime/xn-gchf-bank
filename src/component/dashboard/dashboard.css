@@ -108,7 +108,7 @@
 }
 .ant-menu-item {
     background: transparent;
-    color: #6487d6;
+    color: white;
 }
 .ant-menu:not(.ant-menu-horizontal) .ant-menu-item-selected {
     background: #1890ff;
@@ -167,5 +167,14 @@
     color: white;
 }
 .readonly-text {
+    color: white;
+}
+.ant-menu-sub.ant-menu-inline {
+    background: transparent;
+}
+.ant-menu-sub.ant-menu-inline > .ant-menu-item, .ant-menu-sub.ant-menu-inline > .ant-menu-submenu > .ant-menu-submenu-title {\
+    background: transparent;
+}
+.ant-menu-item .anticon + span, .ant-menu-submenu-title .anticon + span {
     color: white;
 }
