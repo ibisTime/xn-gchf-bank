@@ -111,9 +111,10 @@
     color: white;
 }
 .ant-menu:not(.ant-menu-horizontal) .ant-menu-item-selected {
-    background: #1890ff;
+    background: #1890ff !important;
     color: white;
 }
+
 .ant-table-thead > tr:first-child > th {
     background: #43619f;
 }
@@ -169,6 +170,7 @@
 .readonly-text {
     color: white;
 }
+/*二级菜单*/
 .ant-menu-sub.ant-menu-inline {
     background: transparent;
 }

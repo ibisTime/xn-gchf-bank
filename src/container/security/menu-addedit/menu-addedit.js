@@ -27,7 +27,7 @@ class MenuAddEdit extends React.Component {
       required: true,
       type: 'select',
       listCode: '631066',
-      params: { type: 1 },
+      params: { type: 1, roleType: 'B' },
       keyName: 'code',
       valueName: '{{code.DATA}} {{name.DATA}}'
     }, {
@@ -71,7 +71,11 @@ class MenuAddEdit extends React.Component {
       view: this.view,
       detailCode: 631067,
       addCode: 631060,
-      editCode: 631062
+      editCode: 631062,
+      beforeSubmit: (params) => {
+        params.roleType = 'B';
+        return params;
+      }
     });
   }
 }

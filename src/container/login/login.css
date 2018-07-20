@@ -10,9 +10,6 @@
 	right : 112px;
 	background-size : contain;
 	background-repeat: no-repeat
-  /* margin: 100px auto;
-  margin: 50px 20px; */
-  /*background: transparent;*/
 }
 
 .big-img {
@@ -43,11 +40,6 @@ span.big-title {
 .login-form-item {
 
 }
-/* .login-form-item :last-child { */
-	/* background: url('../../img/shurukuang.png'); */
-	/* border : 3px solid blue */
-	/* margin-top: 50px */
-/* } */
 .login-form-item .input-border {
 	border : 3px solid #59f2fc;
 	border-radius: 10px 0 10px 0;
@@ -60,12 +52,6 @@ span.big-title {
 	border-radius: 10px 0 10px 0;
 	color: #b0d1f6
 }
-/* .login-card {
-	width: 400px;
-	height: 400px;
-	margin: 100px auto;
-	/*background: transparent;*/
-/* } */
 .login-form-button {
 	width: 100%;
 	background: #59f2fc;
@@ -73,9 +59,6 @@ span.big-title {
 	border-radius: 10px 0 10px 0;
 	/* background: url('../../img/anniu.png') */
 }
-/* .big-div {
-	background: url('../../img/setting.png')
-} */
 .role {
 	background : transparent;
 	border-radius: 10px 0 10px 0;

@@ -13,7 +13,6 @@ import {
 import { listWrapper } from 'common/js/build-list';
 import { showWarnMsg, getUserKind } from 'common/js/util';
 import XLSX from 'xlsx';
-import { Button, Upload } from 'antd';
 
 function makeCols(refstr) {
   var o = [];
@@ -100,9 +99,8 @@ class Role extends React.Component {
     return this.props.buildList({
       fields,
       btnEvent,
-      searchParams: cookies.get('loginKind') === 'P' ? {}
-      : {'type': cookies.get('loginKind') === 'O' ? 'O'
-      : cookies.get('loginKind') === 'B' ? 'B' : 'S'},
+      searchParams: cookies.get('loginKind') === 'P' ? { type: 'P' }
+      : {'type': cookies.get('loginKind') === 'O' ? 'O' : cookies.get('loginKind') === 'B' ? 'B' : 'S'},
       pageCode: 631045,
       deleteCode: 631041
     });

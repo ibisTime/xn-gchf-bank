@@ -26,8 +26,10 @@ class RoleMenu extends React.Component {
   }
   componentDidMount() {
     Promise.all([
-      cookies.get('loginKind') === 'P' ? getMenuBtnList()
-        : getRoleMenuBtnList(this.allMenuCode),
+      // cookies.get('loginKind') === 'P' ? getMenuBtnList()
+      //   : getRoleMenuBtnList(this.allMenuCode),
+      // getRoleMenuBtnList(this.code)
+      getRoleMenuBtnList(this.allMenuCode),
       getRoleMenuBtnList(this.code)
     ]).then(([allData, checkData]) => {
       this.getTree(allData);
