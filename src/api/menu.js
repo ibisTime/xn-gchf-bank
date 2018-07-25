@@ -19,7 +19,7 @@ export function getOwnerBtns(parentCode) {
  * 列表获取菜单和按钮
  */
 export function getMenuBtnList() {
-  return fetch(631066);
+  return fetch(631066, {roleType: 'B'});
 }
 
 /**
@@ -30,7 +30,8 @@ export function getRoleMenuList() {
   return fetch(631056, {
     type: 1,
     roleCode: getRoleCode(),
-    updater: ''
+    updater: '',
+    roleType: 'B'
   });
 }
 
@@ -39,5 +40,5 @@ export function getRoleMenuList() {
  */
 export function getRoleMenuBtnList(roleCode) {
   roleCode = roleCode || getRoleCode();
-  return fetch(631056, { roleCode, updater: '' });
+  return fetch(631056, { roleCode, updater: '', roleType: 'B' });
 }

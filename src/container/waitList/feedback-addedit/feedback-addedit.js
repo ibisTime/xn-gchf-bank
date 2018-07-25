@@ -144,13 +144,10 @@ class PostRequestAddedit extends React.Component {
     let payList = [];
     this.state.data.forEach((d, i) => {
       if (i > 5 && d.length) {
-        // console.log(d[8]);
-        // console.log(d[8].replace(',', ''));
-        // console.log(moneyFormat(d[8]));
         payList.push({
           bankcardNumber: d[6],
           latePayDatetime: formatDate(d[9]),
-          payAmount: moneyFormat(d[8].replace(',', '')) * 1000,
+          payAmount: d[8].replace(',', '') * 1000,
           code: d[1]
         });
       }

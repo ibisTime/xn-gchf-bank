@@ -1,5 +1,4 @@
 import React from 'react';
-import cookies from 'browser-cookies';
 import { rock, getUserId } from 'api/user';
 import { Modal } from 'antd';
 import {
@@ -14,6 +13,7 @@ import {
 } from '@redux/security/user';
 import { listWrapper } from 'common/js/build-list';
 import { showWarnMsg, showSucMsg } from 'common/js/util';
+import {getUserDetail} from '../../../api/user';
 
 @listWrapper(
   state => ({
@@ -26,6 +26,18 @@ import { showWarnMsg, showSucMsg } from 'common/js/util';
   }
 )
 class User extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      bankName: '',
+      subbranch: ''
+    };
+  }
+  componentDidMount() {
+    getUserDetail(getUserId()).then((res) => {
+      this.setState({ bankName: res.bankName, subbranch: res.subbranch });
+    });
+  }
   render() {
     const fields = [{
       title: '用户名',
@@ -41,9 +53,6 @@ class User extends React.Component {
       field: 'roleCode',
       type: 'select',
       listCode: '631046',
-      params: {
-        updater: ''
-      },
       keyName: 'code',
       valueName: 'name'
     }, {
@@ -106,15 +115,17 @@ class User extends React.Component {
         }
       }
     };
-    return this.props.buildList({
+    return this.state.bankName ? this.props.buildList({
       fields,
       btnEvent,
-      searchParams: cookies.get('loginKind') === 'P' ? { type: 'P', updater: '' }
-        : cookies.get('loginKind') === 'O' ? { 'type': 'O', updater: '' }
-          : cookies.get('loginKind') === 'B' ? { 'type': 'B', updater: '' } : { 'type': 's', updater: '' },
+      searchParams: {
+        bankName: this.state.bankName,
+        subbranch: this.state.subbranch,
+        updater: ''
+      },
       pageCode: 631085,
       rowKey: 'userId'
-    });
+    }) : null;
   }
 }
 
