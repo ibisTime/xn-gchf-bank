@@ -86,11 +86,11 @@ class Login extends React.Component {
       <div>
         <img src="../img/sy.png" className="big-img" />
         <img src="../img/circle.png" className="big-circle" />
-        <img src="../img/biaoti.png" className="big-title" />
-        <span className="big-title">鲸目60s---{this.typeName}</span>
         {this.props.redirectTo ? <Redirect to={this.props.redirectTo} /> : null}
         {/* {/* <Card title="登录" extra={<a href="#">More</a>} className="login-card"> */}
         <Form onSubmit={this.handleSubmit} className="login-form">
+          <img src="../img/up.png" className="big-title" />
+          <span className="big-title">鲸目60s---{this.typeName}</span>
           <FormItem className="login-form-item">
             {getFieldDecorator('loginName', {
               rules: [{
@@ -100,7 +100,7 @@ class Login extends React.Component {
               initialValue: this.initName
             })(
               <div className="input-border">
-                <Input defaultValue={this.initName} prefix={<span style={{ color: '#b0d1f6' }}>登录名</span>} placeholder="登录名" />
+                <Input defaultValue={this.initName} prefix={<img style={{ width: '26px' }} src='../img/account.png'/>} placeholder="请输入账号" />
               </div>
             )}
           </FormItem>
@@ -113,7 +113,7 @@ class Login extends React.Component {
               initialValue: this.initPwd
             })(
               <div className="input-border">
-                <Input defaultValue={this.initPwd} prefix={<span style={{ color: '#b0d1f6' }}>密码</span>} type="password" placeholder="密码" />
+                <Input defaultValue={this.initPwd} prefix={<img style={{ width: '26px' }} src='../img/lock.png'/>} type="password" placeholder="请输入密码" />
               </div>
             )}
           </FormItem>

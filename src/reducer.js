@@ -10,7 +10,6 @@ import { securityUser } from './redux/security/user';
 import { securityUserAddEdit } from './redux/security/user-addedit';
 import { securityUserResetPwd } from './redux/security/user-resetPwd';
 import { securityUserSetRole } from './redux/security/user-setRole';
-import { securityUserSetBumen } from './redux/security/user-setBumen';
 import { securityUserChangeMobile } from './redux/security/user-changeMobile';
 import { securitySysParam } from './redux/security/sysParam';
 import { securitySysparamAddEdit } from './redux/security/sysParam-addedit';
@@ -26,16 +25,6 @@ import { waitListAlreadyQuest } from './redux/waitList/alreadyQuest';
 import { waitListAlreadyQuestAddedit } from './redux/waitList/alreadyQuest-addedit';
 import { generalTextParam } from './redux/general/text-param';
 import { generalTextParamAddEdit } from './redux/general/text-param-addedit';
-import { newIdAddCompany } from './redux/newId/addCompany';
-import { newIdBank } from './redux/newId/bank';
-import { newIdOperation } from './redux/newId/operation';
-import { newIdOperationAddEdit } from './redux/newId/operation-addedit';
-import { newIdBankAddEdit } from './redux/newId/bank-addedit';
-import { newIdYezhu } from './redux/newId/yezhu';
-import { newIdYezhuAddEdit } from './redux/newId/yezhu-addedit';
-import { newIdSupervise } from './redux/newId/supervise';
-import { newIdSuperviseAddEdit } from './redux/newId/supervise-addedit';
-import { newIdCompanyConstruct1 } from './redux/newId/companyConstruct1';
 import { waitListTextMessage } from './redux/waitList/textMessage';
 import { waitListTextMessageAddEdit } from './redux/waitList/textMessage-addedit';
 
@@ -50,7 +39,6 @@ export default combineReducers({
   securityUser,
   securityUserAddEdit,
   securityUserSetRole,
-  securityUserSetBumen,
   securityUserResetPwd,
   securityUserChangeMobile,
   securitySysParam,
@@ -67,16 +55,6 @@ export default combineReducers({
   waitListAlreadyQuestAddedit,
   generalTextParam,
   generalTextParamAddEdit,
-  newIdAddCompany,
-  newIdBank,
-  newIdOperation,
-  newIdOperationAddEdit,
-  newIdBankAddEdit,
-  newIdYezhu,
-  newIdYezhuAddEdit,
-  newIdSupervise,
-  newIdSuperviseAddEdit,
-  newIdCompanyConstruct1,
   waitListTextMessage,
   waitListTextMessageAddEdit
 });

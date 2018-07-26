@@ -92,11 +92,11 @@ export function getProject(code) {
  * @param limit
  * @param projectCode
  */
-export function getPagePayCode(start, limit, projectCode) {
+export function getPagePayCode(start, limit, projectCodeList) {
   return fetch(631445, {
     start,
     limit,
-    projectCode,
+    projectCodeList,
     month: new Date().getMonth() + 1
   });
 }
@@ -119,11 +119,11 @@ export function getPageChecks(start, limit, projectCode) {
  * @param limit
  * @param projectCode
  */
-export function getPageabnormal(start, limit, projectCode, status) {
+export function getPageabnormal(start, limit, projectCodeList, status) {
   return fetch(631445, {
     start,
     limit,
-    projectCode,
+    projectCodeList,
     statusList: ['4', '5', '6', '7']
   });
 }

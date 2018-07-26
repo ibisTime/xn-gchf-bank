@@ -49,10 +49,6 @@ class AlreadyQuest extends React.Component {
   }
   render() {
     const fields = [{
-      title: '公司名称',
-      field: 'companyName'
-      // className: this.userKind === 'B' ? 'haha' : ''
-    }, {
       title: '项目名称',
       field: 'projectName'
       // className: this.userKind === 'B' ? 'haha' : ''
@@ -101,7 +97,8 @@ class AlreadyQuest extends React.Component {
         searchParams: {
           status: 3,
           subbranch: this.state.subbranch,
-          bankName: this.state.bankName
+          bankName: this.state.bankName,
+          projectCodeList: this.state.projectCodeList
         },
         pageCode: 631435
         // className: 'tableClass'

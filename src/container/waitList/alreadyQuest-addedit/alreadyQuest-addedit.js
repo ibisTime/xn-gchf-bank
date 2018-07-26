@@ -36,8 +36,7 @@ class AlreadyQuestAddedit extends React.Component {
       sendDatetime: '',
       status: '',
       backDownload: '',
-      title: '',
-      companyName: ''
+      title: ''
     };
   };
   componentDidMount() {
@@ -53,8 +52,7 @@ class AlreadyQuestAddedit extends React.Component {
         download: data.download,
         backDownload: data.backDownload,
         title: data.title,
-        accountName: data.companyCard.accountName,
-        companyName: data.companyCard.companyName
+        accountName: data.companyCard.accountName
       });
     });
   }
@@ -128,7 +126,6 @@ class AlreadyQuestAddedit extends React.Component {
       <div>
         <Card style={{ width: '100%', borderColor: 'rgba(153,212,255,0.6)', boxShadow: '0px 0px 30px rgba(153,212,255,0.6) inset' }}>
           <p style={{ fontSize: '16px' }}>{this.state.title + '工资'}</p>
-          <p>公司名称：{this.state.companyName}</p>
           <p style={{ marginRight: '20px' }}>项目名称：{this.state.projectName}</p>
           <p>请求时间：{formatDate(this.state.sendDatetime)}</p>
           <p>代发账户户名：{this.state.accountName}</p>

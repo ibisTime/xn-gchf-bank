@@ -62,10 +62,6 @@ const ROUTES = [
     component: asyncComponent(() => import('container/security/user-setRole/user-setRole'))
   },
   {
-    path: '/security/user/setBumen',
-    component: asyncComponent(() => import('container/security/user-setBumen/user-setBumen'))
-  },
-  {
     path: '/security/user/changeMobile',
     component: asyncComponent(() => import('container/security/user-changeMobile/user-changeMobile'))
   },
@@ -120,50 +116,6 @@ const ROUTES = [
   {
     path: '/general/textParam/addedit',
     component: asyncComponent(() => import('container/general/text-param-addedit/text-param-addedit'))
-  },
-  {
-    path: '/newId/bank',
-    component: asyncComponent(() => import('container/newId/bank/bank'))
-  },
-  {
-    path: '/newId/operation',
-    component: asyncComponent(() => import('container/newId/operation/operation'))
-  },
-  {
-    path: '/newId/operation/addedit',
-    component: asyncComponent(() => import('container/newId/operation-addedit/operation-addedit'))
-  },
-  {
-    path: '/newId/bank/addedit',
-    component: asyncComponent(() => import('container/newId/bank-addedit/bank-addedit'))
-  },
-  {
-    path: '/newId/yezhu',
-    component: asyncComponent(() => import('container/newId/yezhu/yezhu'))
-  },
-  {
-    path: '/newId/yezhu/addedit',
-    component: asyncComponent(() => import('container/newId/yezhu-addedit/yezhu-addedit'))
-  },
-  {
-    path: '/newId/supervise',
-    component: asyncComponent(() => import('container/newId/supervise/supervise'))
-  },
-  {
-    path: '/newId/companyConstruct',
-    component: asyncComponent(() => import('container/newId/companyConstruct1/companyConstruct1'))
-  },
-  {
-    path: 'newId/companyConstruct/addedit',
-    component: asyncComponent(() => import('container/newId/addCompany/addCompany'))
-  },
-  {
-    path: '/newId/companyConstruct/addCompany',
-    component: asyncComponent(() => import('container/newId/addCompany/addCompany'))
-  },
-  {
-    path: '/newId/supervise/addedit',
-    component: asyncComponent(() => import('container/newId/supervise-addedit/supervise-addedit'))
   }
 ];
 

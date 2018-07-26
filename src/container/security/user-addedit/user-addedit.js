@@ -73,6 +73,7 @@ class UserAddEdit extends React.Component {
       beforeSubmit: (params) => {
         params.bankName = this.state.bankName;
         params.subbranch = this.state.subbranch;
+        params.userRefree = getUserId();
         return params;
     }
     }) : null;

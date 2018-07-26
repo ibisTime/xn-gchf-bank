@@ -1,15 +1,14 @@
 .login-form {
-	width: 486px;
-	height : 358px;
+	width: 451px;
+	height : 447px;
 	margin : 0 0 0 0;
-	padding: 50px 80px;
-	background : url('../../img/denglu.png');
+	padding: 50px 75px;
+	background : url('../../img/denglu.png') no-repeat;
 	float: right;
 	position: absolute;
-	top : 170px;
-	right : 112px;
-	background-size : contain;
-	background-repeat: no-repeat
+	top : 128px;
+	right : 125px;
+	background-size : 451px 447px
 }
 
 .big-img {
@@ -23,45 +22,41 @@
 	top : 50px;
 	left : 142px;
 }
-
 .big-title {
-	width: 280px;
-	height: 50px;
-	position: absolute;
-	top : 80px;
-	left : 382px;
-	
+    width: 300px;
+    height: 50px;
+    position: absolute;
+    top : 0px;
 }
 span.big-title {
-	color : #fff;
-	font-size: 24px;
-	padding: 5px 30px
+    color: #fff;
+    font-size: 22px;
+    text-align: center;
+    padding-top: 5px;
 }
 .login-form-item {
 
 }
-.login-form-item .input-border {
-	border : 3px solid #59f2fc;
-	border-radius: 10px 0 10px 0;
+.login-form-item .input-border#loginName{
+    margin-top: 80px;
 }
 .login-form-item input {
+    border : 2px solid rgba(48, 201, 233, 0.8);
 	background-color: rgba(13,69, 131, 0.8);
-	width: 100%;
-	height : 40px;
-	padding-left: 100px !important;
-	border-radius: 10px 0 10px 0;
+    box-shadow: 0px 0px 30px rgba(56, 148, 216, 0.5) inset;
+    /*boxShadow: '0px 0px 30px rgba(153,212,255,0.6) inset',*/
+	width: 302px;
+	height : 50px;
+	padding-left: 70px !important;
 	color: #b0d1f6
 }
 .login-form-button {
-	width: 100%;
+	width: 302px;
 	background: #59f2fc;
-	height: 40px;
-	border-radius: 10px 0 10px 0;
-	/* background: url('../../img/anniu.png') */
+	height: 50px;
 }
 .role {
 	background : transparent;
-	border-radius: 10px 0 10px 0;
 	border : 3px solid #28f2ff;
 	position: absolute;
 	bottom : 8%;
@@ -79,6 +74,7 @@ span.big-title {
 }
 
 .remember-pwd {
+    background: transparent;
 	color: #5d9eff;
 	float: right;
 	
