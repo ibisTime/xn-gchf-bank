@@ -137,6 +137,7 @@ class PostRequestAddedit extends React.Component {
       showWarnMsg('请上传正确的文件！');
     }
   }
+  // 上传
   postRequest1() {
     let param = {};
     let payList = [];

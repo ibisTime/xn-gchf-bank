@@ -180,3 +180,8 @@
 .ant-menu-item .anticon + span, .ant-menu-submenu-title .anticon + span {
     color: white;
 }
+
+/*树状结构文字颜色*/
+.ant-tree li .ant-tree-node-content-wrapper {
+    color: #fff !important;
+}

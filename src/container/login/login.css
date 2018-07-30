@@ -68,7 +68,12 @@ span.big-title {
 	font-size: 20px;
 	padding: 5px
 }
+ant-checkbox {
+    background: transparent;
+}
+ant-checkbox-checked {
 
+}
 .rem-pwd {
 	margin-bottom: 0;
 }
