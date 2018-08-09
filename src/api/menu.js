@@ -11,7 +11,8 @@ export function getOwnerBtns(parentCode) {
     parentCode,
     roleCode: getRoleCode(),
     type: 2,
-    updater: ''
+    updater: '',
+    systemCode: 'B'
   });
 }
 
@@ -19,7 +20,7 @@ export function getOwnerBtns(parentCode) {
  * 列表获取菜单和按钮
  */
 export function getMenuBtnList() {
-  return fetch(631066, {roleType: 'B'});
+  return fetch(631066, {systemCode: 'B'});
 }
 
 /**
@@ -31,7 +32,7 @@ export function getRoleMenuList() {
     type: 1,
     roleCode: getRoleCode(),
     updater: '',
-    roleType: 'B'
+    systemCode: 'B'
   });
 }
 
@@ -40,5 +41,5 @@ export function getRoleMenuList() {
  */
 export function getRoleMenuBtnList(roleCode) {
   roleCode = roleCode || getRoleCode();
-  return fetch(631056, { roleCode, updater: '', roleType: 'B' });
+  return fetch(631056, { roleCode, updater: '', systemCode: 'B' });
 }

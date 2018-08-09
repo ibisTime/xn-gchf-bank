@@ -14,6 +14,7 @@ import {
 } from '@redux/menu';
 import { logout } from 'common/js/fetch';
 import { getUserKind, clearUser } from 'common/js/util';
+// import { getHelpList } from 'common/js/general';
 import asyncComponent from '../async-component/async-component';
 import EditPwd from 'component/edit-pwd/edit-pwd';
 import ContactWithUs from 'component/contactWithUs/contactWithUs';
@@ -56,6 +57,9 @@ class Dashboard extends React.Component {
   }
   componentDidMount() {
     this.props.getMenuList();
+    // getHelpList().then((res) => {
+    //   console.log(res);
+    // });
   }
   handleTopMenuClick(e) {
     if (e.key && e.key !== 'user') {
@@ -140,7 +144,9 @@ class Dashboard extends React.Component {
                        setContactWithUsVisible={this.setContactWithUsVisible}
                        contact={this.state.contact}
                        help={this.state.help}
-                       kind={this.loginKind}/>
+                       kind={this.loginKind}
+                       helpArr={this.state.helpArr}
+        />
       </Header>
     );
   }
