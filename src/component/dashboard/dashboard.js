@@ -57,9 +57,6 @@ class Dashboard extends React.Component {
   }
   componentDidMount() {
     this.props.getMenuList();
-    // getHelpList().then((res) => {
-    //   console.log(res);
-    // });
   }
   handleTopMenuClick(e) {
     if (e.key && e.key !== 'user') {
@@ -107,8 +104,8 @@ class Dashboard extends React.Component {
   getHeader() {
     const userShow = (
       <Menu>
-        <Menu.Item><a href="#" onClick={() => this.setEditPwdVisible(true)}>修改密码</a></Menu.Item>
-        <Menu.Item><a href="#" onClick={this.logout}>退出</a></Menu.Item>
+        <Menu.Item><a href="javascript:void(0)" onClick={() => this.setEditPwdVisible(true)}>修改密码</a></Menu.Item>
+        <Menu.Item><a href="javascript:void(0)" onClick={this.logout}>退出</a></Menu.Item>
       </Menu>
     );
     return (

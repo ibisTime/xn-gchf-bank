@@ -32,7 +32,6 @@ class ContactWithUs extends React.Component {
         helpArr.push(helpObj);
       });
       this.setState({ helpArr });
-      console.log(this.state.helpArr[0].code);
     });
   }
   tab(index) {

@@ -53,14 +53,9 @@ class PostRequestAddedit extends React.Component {
       });
     });
   }
-  downNum(flag) {
-    let { backDownload, download } = this.state;
-    if (flag) {
-      backDownload += 1;
-    } else {
-      download += 1;
-    }
-    downNum(this.code, download, backDownload).then((data) => {
+  downNum() {
+    let download = this.state.download;
+    downNum(this.code, this.state.backDownload, download + 1).then((data) => {
       this.setState({
         download: data.download,
         backDownload: data.backDownload
@@ -153,12 +148,10 @@ class PostRequestAddedit extends React.Component {
     if (!payList || !payList.length) {
       showWarnMsg('请上传工资信息！');
       return;
-    };
-    console.log(payList);
+    }
     param.payList = payList;
     param.handler = getUserId();
     param.code = this.code;
-    console.log(param);
     fetch(631432, param).then(() => {
       showSucMsg('操作成功');
       setTimeout(() => {
@@ -191,7 +184,7 @@ class PostRequestAddedit extends React.Component {
            <img src={require('./gongzidan.png')} ></img>
           </div>
           <Button onClick={this.handleExport} type="primary" style={{ marginBottom: '12px', position: 'relative', top: '-20px', left: '0px' }}>点击下载</Button>
-          <span style={{ position: 'relative', left: '-70px', top: '20px', fontSize: '12px', color: '#999' }}>下载次数{this.state.backDownload}</span>
+          <span style={{ position: 'relative', left: '-70px', top: '20px', fontSize: '12px', color: '#999' }}>下载次数{this.state.download}</span>
         </Card>
         <Button onClick={this.goBack.bind(this)} style={{ marginTop: 40 }}>返回</Button>
       </div>
